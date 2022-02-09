@@ -1,0 +1,146 @@
+:root {
+    --white: #ffffff;
+    --white1: #f2f2f2;
+
+    --light-gray: #e6e6e6;
+
+    --black: #000000;
+    --black1: #171717;
+
+    --gray: #2f2f2f;
+    --gray1: #333333;
+
+    --blue: #75b6e7;
+    --blue1: #0078d4;
+    --blue3: #0a62af;
+    --blue4: #213e66;
+}
+
+* { /* sa modific asta */
+    color: var(--fontColor);
+    font-family: Calibri, 'Consolas';
+} 
+
+body {
+    background: var(--bg);
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--blue1);
+    --btnFontColor: var(--white);
+    --contentColor: var(--white1);
+    --contentFontColor: var(--black1);
+    --hFontColor: var(--black1);
+    --textFontColor: var(--black);
+    --textColor: var(--white1);
+    --textareaFontColor: var(--black);
+    --textareaColor: var(--light-gray);
+    --runBtnFontColor: var(--white);
+    --runBtnBg: var(--blue1);
+}
+.dark-theme {
+    --bg: var(--gray);
+    --fontColor: var(--white1);
+    --btnBg: var(--blue);
+    --btnFontColor: var(--black);
+    --contentColor: var(--gray1);
+    --contentFontColor: var(--white1);
+    --hFontColor: var(--white1);
+    --textFontColor: var(--white1);
+    --textColor: var(--black1);
+    --textareaFontColor: var(--white1);
+    --textareaColor: var(--black1);
+    --runBtnFontColor: var(--black);
+    --runBtnBg: var(--blue);
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn {
+    position: absolute;
+    top: 16.5px;
+    right: 8px;
+    height: 30px;
+    width: 70px;
+    border-radius: 3.5%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus { outline-style: none; }
+
+.sidebar-left {
+    color: var(--contentFontColor);
+    background-color: var(--contentColor);
+}
+.sidebar-left {
+    width: 187px;
+    height: 902px;
+    color: var(--contentFontColor);
+    background-color: var(--contentColor);
+}
+
+.title-label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 187px;
+    height: 47px;
+
+}
+
+.title-label h2 {
+    position: absolute;
+    top: -12px;
+    left: 42.3px;
+    color: var(--hFontColor);
+}
+
+.work-bench {
+    color: var(--textFontColor);
+    background-color: var(--textColor);
+}
+.work-bench {
+    position: absolute;
+    top: 55px;
+    left: 195px;
+    right: 12px;
+    width: auto;
+    height: 855px;
+    border-radius: 0%;
+    border: none;
+    resize: none;
+    color: var(--textFontColor);
+    background-color: var(--textColor);
+}
+
+.work-bench textarea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 851px;
+    border-radius: 0%;
+    border: none;
+    resize: none;
+    color: var(--textareaFontColor);
+    background-color: var(--textareaColor);
+}
+.work-bench textarea:focus { outline-style: none; }
+
+.run-btn {
+    position: absolute;
+    top: -38.5px;
+    left: 0px;
+    height: 30px;
+    width: 70px;
+    border-radius: 1.5%;
+    border: none;
+    color: var(--runBtnFontColor);
+    background-color: var(--runBtnBg);
+}
