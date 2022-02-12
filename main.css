@@ -39,19 +39,24 @@ body {
     background: #2f2f2f;
 }
 
-#top{
+#top {
+    background: #2f2f2f;
     height: 100%;
     width: 100%;
 }
 
-#middle{
-    height: auto;
+#middle {
+    background: #f2f2f2;
+    height: 15%;
     width: 100%;
 }
 
-#bottom{
-    height: 100%;
-    width: 100%;
+#bottom {
+    background: #21293d;
+    color: #f2f2f2;
+    text-align: right;
+    font-size: large;
+    display: block;
 }
 
 
@@ -77,6 +82,7 @@ body {
 .navbar a.logo {
     background: #ff5e00;
     font-size: 19px;
+    font-weight: bold;
     font-family: arial, sans-serif;
     color: #171717;
 }
@@ -88,23 +94,18 @@ body {
     color: #171717;
 }
 
-
-.main {
-    margin-top: 30px;
-}
-
 .descrierePseudo {
-    float: left;
-    padding: 20% 0;
-
-    max-width: 60%;
-
-    text-align: center;
-    direction: ltr;
-
-    font-size: 34px;
+    max-width: 100%;
+    max-height: 35%;
+   
     font-family: arial, sans-serif;
     color: #d8d8d8;
+}
+.motto {
+    font-size: 550%;
+    text-align: center;
+    direction: ltr;
+    padding: 10% 5%;
 }
 
 .openBtn  {
@@ -112,18 +113,18 @@ body {
     position: absolute;
 
     height: 12%;
-    width: auto;
+    width: 270px;
     
-    top: 75%;
-    right: 12%;
+    top: 65%;
+    right: 20%;
     
     text-transform: uppercase;
     font-weight: 500;
     font-size: 38px;
     letter-spacing: 3.8px;
-    color: #0078d4;
+    color: #d8d8d8;
 
-    border: 3px #0078d4 solid;
+    border: 3px #fb6e1e solid;
     border-radius: 6px;
         
     z-index: 1;
@@ -143,7 +144,7 @@ body {
 .openBtn:before {
     content: "";
     position: absolute;
-    background: #0078d4;
+    background: #fb6e1e;
         
     bottom: 0;
     left: 0;
@@ -164,18 +165,18 @@ body {
     position: absolute;
 
     height: 12%;
-    width: auto;
+    width: 270px;
     
-    top: 25%;
-    right: 12%;
+    top: 65%;
+    left: 20%;
 
     text-transform: uppercase;
     font-weight: 500;
     font-size: 38px;
     letter-spacing: 4.7px;
-    color: #0078d4;
+    color: #d8d8d8;
 
-    border: 3px #0078d4 solid;
+    border: 3px #fb6e1e solid;
     border-radius: 6px;
     
     z-index: 1;
@@ -195,7 +196,7 @@ body {
 .downloadBtn:before {
     content: "";
     position: absolute;
-    background: #0078d4;
+    background: #fb6e1e;
     
     bottom: 0;
     left: 0;
@@ -211,8 +212,45 @@ body {
 }
 
 
-.descriere {
-    font-size: 16px;
-    font-family: arial, sans-serif;
+#middle {
+    width: 100%;
+    text-align: center;
+    color: #2f2f2f;
+    font-weight: bold;
 }
 
+#left {
+    float: left;
+    width: 33,33%;
+    text-align: center;
+    padding-left: 5%;
+}
+
+#center {
+    display: inline-block;
+    margin: 0 auto;
+    width: 33,33%;
+    text-align: center;
+}
+
+#right {
+    float: right;
+    width: 33,33%;
+    text-align: center;
+    padding-right: 5%;
+}
+
+#middle a:link {
+    text-decoration: none;
+    background-color: #f4511e;
+    border: 7.5px solid #f4511e;
+    border-radius: 5.5px;
+    color: #000000;
+}
+
+#bottom a:link {
+    text-decoration: underline;
+    background-color: #0d1117;
+    border-radius: 5.5px;
+    color: #d8d8d8;
+}
